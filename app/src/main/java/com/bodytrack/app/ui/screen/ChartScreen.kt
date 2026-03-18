@@ -257,12 +257,11 @@ private fun SimpleLineChart(
 
                         // 数据条
                         LinearProgressIndicator(
-                            progress = { (value - minValue) / range },
+                            progress = (value - minValue) / range,
                             modifier = Modifier
                                 .weight(1f)
                                 .height(8.dp),
-                            color = color,
-                            trackColor = color.copy(alpha = 0.2f)
+                            color = color
                         )
 
                         Spacer(modifier = Modifier.width(4.dp))

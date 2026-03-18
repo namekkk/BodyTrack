@@ -199,7 +199,7 @@ fun SettingsScreen(
                     csvExportLauncher.launch("body_track_${System.currentTimeMillis()}.csv")
                 }
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
+                Divider(modifier = Modifier.padding(vertical = 12.dp))
 
                 // 备份数据
                 SettingsItem(
